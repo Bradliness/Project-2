@@ -7,64 +7,80 @@ body {
  background-image: url('../img/paper.jpg');
  background-color: #878996;
 }
-#about, #work, #contact  #gallery{
-   height: 600px;
+#about #work #contact #gallery{
+   height: 100px;
 }
 
 /***** GRID *****/
 
-.full-width {
-   width: 1500px;
+.content-wrapper {
+  display:flex;
+  justify-content: center;S
+
+   width: 1800px;
    margin: 0 auto;
  }
+ #header{
+   height:200px;
+ }
  ul {
+   display:flex;
+   float:left;
    list-style-type: none;
    margin-left:20px;
-   Padding:20px;
+   Padding:30px;
    margin-right:3px;
-   font-size: 25px;
+   font-size: 35px;
    float:right;
    padding-left: 15px;
-   height:30px;
+   height:40px;
  }
    li{
-     display:inline-block;
+     display:flex;
      padding-left: 30px;
+     justify-content:
    }
- h1 {
+ #about h1 {
+   padding-top: 20px;
+  position:relative;
   text-align: center;
-  width:1200px;
   font-family: 'Indie Flower', serif;
-  font-size:60px;
-  padding-left: 60px;
-}
-#about h2 {
+  font-size:70px;
+  margin: 0 auto;
 
 }
-#about P{
-  margin-left: 100px;
-  margin right:400px;
-  text-align: center;
-  display: inline-block;
+.about h2 {
+
 }
-#about img {
-  padding-left: 430px
-   float:none;
- }
- img {
-  width:900px;
-  padding-left:30px;
-  float:none;
-}
-}
-.flex-container {
+.about P {
   display: flex;
+  text-align: center;
 }
-#gallery h1{
-  display: inline-block;
-  margin-left: 230px
-};
-#gallery h2 {
+.scrunchy {
+  display:flex;
+  justify-content: center;
+}
+.scrunchy img {
+  width:55%;
+
+}
+
+.flex-container #gallery{
+  display: flex;
+  justify-content: center;
+
+
+}
+.gallery #h1{
+  display: flex;
+  justify-content: center;
+  font-size: 55px;
+  height:auto;
+  margin: 0 auto;
+}
+.gallery #h2 {
+  display: flex;
+  justify-content: center;
   font-family: 'Indie Flower', serif;
   font-size: 42px;
   margin-left: 300px;
@@ -89,6 +105,11 @@ div.gallery img {
   width: 100%;
   height: auto;
 }
+.main.gallery {
+  display:flex;
+  justify-content: center;
+}
+
 p {
   padding-left: 30px;
   font-size: 35px;
@@ -97,8 +118,9 @@ p {
 div.desc {
   padding:inherit;
   text-align: center;
+  font-size: 24px;
 }
-img {
+img.gallery {
   padding-left: 200px;
   padding-right: 200px;
   border-radius: 26px;
@@ -114,14 +136,13 @@ footer {
   padding-top: 44px;
 
 }
+#signature{
+  display:flex;
+  justify-content: center;
+}
 #signature h3 {
   font-family: 'Caveat' serif;
-  font-size: 20px;
+  font-size: 30px;
   color: #3d660d;
-  height: 30px;
-  margin-left: 300px;
-  display: inline-block;
-
-
 
 }
